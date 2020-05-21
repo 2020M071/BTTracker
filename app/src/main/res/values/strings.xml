@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BT Tracker</string>
+    <string name="textview">TextView</string>
+    <string name="bt_tracker">BT_tracker</string>
+    <string name="log_body_temperature">Log body temperature</string>
+    <string name="check_normal_range">Check Normal Range</string>
+    <string name="mechanism_of_fever">Mechanism of Fever</string>
+    <string name="handling_fever">Handling Fever</string>
+    <string name="please_log_you_tempareture_today">Please Log you tempareture today</string>
+    <string name="button">Button</string>
+    <string name="save">Save</string>
+</resources>
