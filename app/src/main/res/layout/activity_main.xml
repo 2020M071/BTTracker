@@ -57,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#37706A"
+            android:background="#498E87"
             android:onClick="goTOLogActivity"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
@@ -77,7 +77,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#37706A"
+            android:background="#498E87"
             android:onClick="goToNormalActivity"
             android:shadowColor="#F6F2F3"
             android:text="@string/check_normal_range"
@@ -85,12 +85,17 @@
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
 
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
         <TextView
             android:id="@+id/MainButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#37706A"
+            android:background="#498E87"
             android:onClick="goToMechanismActivity"
             android:shadowColor="#F6F2F3"
             android:text="@string/mechanism_of_fever"
@@ -98,12 +103,17 @@
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
 
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
         <TextView
             android:id="@+id/MainButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#37706A"
+            android:background="#498E87"
             android:onClick="goToLink2"
             android:shadowColor="#F6F2F3"
             android:text="@string/handling_fever"
