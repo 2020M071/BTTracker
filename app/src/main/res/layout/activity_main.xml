@@ -50,7 +50,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleBackgroound"
-        app:layout_constraintVertical_bias="0.06999999">
+        app:layout_constraintVertical_bias="0.050000012">
 
         <TextView
             android:id="@+id/MainButton1"
@@ -70,7 +70,7 @@
         <View
             android:id="@+id/view2"
             android:layout_width="match_parent"
-            android:layout_height="10dp" />
+            android:layout_height="5dp" />
 
         <TextView
             android:id="@+id/MainButton2"
@@ -79,6 +79,8 @@
             android:layout_weight="1"
             android:background="#498E87"
             android:onClick="goToNormalActivity"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
             android:shadowColor="#F6F2F3"
             android:text="@string/check_normal_range"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -88,7 +90,7 @@
         <View
             android:id="@+id/view"
             android:layout_width="match_parent"
-            android:layout_height="10dp" />
+            android:layout_height="5dp" />
 
         <TextView
             android:id="@+id/MainButton3"
@@ -97,6 +99,8 @@
             android:layout_weight="1"
             android:background="#498E87"
             android:onClick="goToMechanismActivity"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
             android:shadowColor="#F6F2F3"
             android:text="@string/mechanism_of_fever"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -106,7 +110,7 @@
         <View
             android:id="@+id/view3"
             android:layout_width="match_parent"
-            android:layout_height="10dp" />
+            android:layout_height="5dp" />
 
         <TextView
             android:id="@+id/MainButton4"
@@ -115,6 +119,8 @@
             android:layout_weight="1"
             android:background="#498E87"
             android:onClick="goToLink2"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
             android:shadowColor="#F6F2F3"
             android:text="@string/handling_fever"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
