@@ -11,4 +11,6 @@
     <string name="save">Save</string>
     <string name="why_do_we_have_fever">Why do we have fever?</string>
     <string name="normal_human_body_temperature_is_between_36_0_37_5">Normal human body temperature is between 36.0–37.5</string>
+    <string name="useful_links_about_fever">Useful Links about Fever</string>
+    <string name="set_reminder">Set Reminder</string>
 </resources>
