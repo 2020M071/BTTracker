@@ -10,6 +10,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,6 +34,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         TextView mainButton4 = findViewById(R.id.MainButton4);
         mainButton4.setOnClickListener(this);
+
+        Button setReminderButton = findViewById(R.id.setReminderButton);
+        setReminderButton.setOnClickListener(this);
     }
 
 
@@ -64,6 +68,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     startActivity(openFeverLink);
                 }
                 break;
+
+            case R.id. setReminderButton:
+                // When user clicks "SET REMINDER" button, a toast message will
+// pop up to let user know that a reminder is set
+                Toast.makeText(this, "Reminder set!", Toast.LENGTH_SHORT).show();
+// Create an intent object to start
+// the ReminderBroadcastReceiver class
+                Intent intent = new Intent(this, ReminderBroadcastReceiver.class);
+// Create a pending intent so that the intent object above
+// will only fire when alarm triggers
+                PendingIntent pd = PendingIntent.getBroadcast(this, 0, intent, 0);
+// create an AlarmManager
+                AlarmManager alarmManager = (AlarmManager)
+                        getSystemService(ALARM_SERVICE);
+// Repeating interval for the alarmManager is set to 6 second
+// for demonstration purpose
+// In real world application, users may want to get daily reminder
+// In that case, set the interval to 1000 * 60 * 60 * 24
+                long interval = 1000 * 6;
+// set up a repeating alarm so that the notification reminder
+// gets fired at the set interval
+                alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,
+                        System.currentTimeMillis(), interval, pd);
         }
     }
 
@@ -73,29 +100,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(toLink2);
     }
 
-    public void setReminder(View view) {
-        // When user clicks "SET REMINDER" button, a toast message will
-// pop up to let user know that a reminder is set
-        Toast.makeText(this, "Reminder set!", Toast.LENGTH_SHORT).show();
-// Create an intent object to start
-// the ReminderBroadcastReceiver class
-        Intent intent = new Intent(this, ReminderBroadcastReceiver.class);
-// Create a pending intent so that the intent object above
-// will only fire when alarm triggers
-        PendingIntent pd = PendingIntent.getBroadcast(this, 0, intent, 0);
-// create an AlarmManager
-        AlarmManager alarmManager=
-                (AlarmManager)getSystemService(ALARM_SERVICE);
-// Repeating interval for the alarmManager is set to 6 second
-// for demonstration purpose
-// In real world application, users may want to get daily reminder
-// In that case, set the interval to 1000 * 60 * 60 * 24
-        long interval = 1000*6;
-// set up a repeating alarm so that the notification reminder
-// gets fired at the set interval
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,
-                System.currentTimeMillis(), interval, pd);
-    }
+
+
     private void createNotificationChannel(){
 // First, check SDK version
 // Create notification channel only if SDK version > Android 8 Oreo
