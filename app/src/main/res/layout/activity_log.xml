@@ -11,7 +11,7 @@
         android:id="@+id/LogTitle"
         android:layout_width="393dp"
         android:layout_height="108dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="32dp"
         android:background="#e63946"
         android:gravity="center"
         android:text="@string/please_log_you_tempareture_today"
@@ -19,7 +19,7 @@
         android:textColor="#FAFAFA"
         android:textColorHighlight="#041000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,7 +27,8 @@
         android:id="@+id/LogSaveButton"
         android:layout_width="391dp"
         android:layout_height="108dp"
-        android:layout_marginTop="612dp"
+        android:layout_marginTop="436dp"
+        android:onClick="confirmBT"
         android:shadowColor="#8BC34A"
         android:text="@string/save"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
@@ -41,11 +42,14 @@
         android:id="@+id/LogInputData"
         android:layout_width="390dp"
         android:layout_height="117dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="84dp"
         android:ems="10"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="#FDD835"
+        android:textColorHighlight="#E53935"
+        android:textColorLink="#E53935"
         app:layout_constraintStart_toStartOf="@+id/LogTitle"
         app:layout_constraintTop_toBottomOf="@+id/LogTitle" />
 </androidx.constraintlayout.widget.ConstraintLayout>
