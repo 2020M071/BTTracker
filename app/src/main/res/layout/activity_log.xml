@@ -4,40 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#48cae4"
     tools:context=".LogActivity">
 
     <TextView
         android:id="@+id/LogTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="77dp"
+        android:layout_width="393dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="60dp"
+        android:background="#e63946"
+        android:gravity="center"
         android:text="@string/please_log_you_tempareture_today"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FAFAFA"
+        android:textColorHighlight="#041000"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/LogSaveButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="261dp"
+        android:layout_width="391dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="612dp"
+        android:shadowColor="#8BC34A"
         android:text="@string/save"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#7CB342"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/LogInputData"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="72dp"
+        android:layout_width="390dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="136dp"
         android:ems="10"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
+        android:textColor="#FDD835"
         app:layout_constraintStart_toStartOf="@+id/LogTitle"
         app:layout_constraintTop_toBottomOf="@+id/LogTitle" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
